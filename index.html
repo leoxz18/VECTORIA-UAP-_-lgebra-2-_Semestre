@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VECTORIA UAP - Proyecto Integrador de Álgebra 2">
+  <title>VECTORIA UAP | Álgebra 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="institutional-colors">
+
+  <!-- PANTALLA DE CARGA -->
+  <div id="splash" class="splash">
+    <div class="splash-logos">
+      <img src="assets/uap.jpeg" alt="UAP">
+      <img src="assets/facultad.jpeg" alt="Área de Ciencias y Tecnología">
+      <img src="assets/sistemas.jpeg" alt="Ingeniería de Sistemas">
+      <img src="assets/vectoria.jpeg" alt="VECTORIA">
+    </div>
+    <h2>VECTORIA UAP</h2>
+    <p>Preparando el entorno académico...</p>
+    <div class="loader"><span></span></div>
+  </div>
+
+  <!-- BARRA SUPERIOR -->
+  <header class="topbar">
+    <button id="menuBtn" class="menu-btn">☰</button>
+
+    <div class="brand-mini">
+      <img src="assets/vectoria.jpeg" alt="VECTORIA">
+      <div>
+        <strong>VECTORIA UAP</strong>
+        <small>ÁLGEBRA 2</small>
+      </div>
+    </div>
+
+    <div class="top-status">
+      <span id="greeting">Buenas tardes</span>
+      <span id="clock">00:00:00</span>
+    </div>
+  </header>
+
+  <!-- MENÚ LATERAL -->
+  <aside id="sidebar" class="sidebar">
+    <div class="institution">
+      <img src="assets/uap.jpeg" alt="Logo UAP">
+      <strong>Universidad Amazónica de Pando</strong>
+      <small>Área de Ciencias y Tecnología</small>
+      <small>Ingeniería de Sistemas</small>
+    </div>
+
+    <nav class="navigation">
+      <button class="nav-link active" data-section="inicio">🏠 <span>Inicio</span></button>
+      <button class="nav-link" data-section="resolver">🧮 <span>Resolver</span></button>
+      <button class="nav-link" data-section="teoria">📚 <span>Teoría</span></button>
+      <button class="nav-link" data-section="ejercicios">📝 <span>Ejercicios</span></button>
+      <button class="nav-link" data-section="equipo">👥 <span>Quiénes somos</span></button>
+      <button class="nav-link" data-section="proyecto">ℹ️ <span>Proyecto</span></button>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <span>GESTIÓN 2026</span>
+      <small>Segundo Semestre</small>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <!-- ================= INICIO ================= -->
+    <section id="inicio" class="section active-section">
+
+      <div class="hero reveal">
+        <div class="hero-content">
+          <span class="eyebrow">PROYECTO INTEGRADOR · ÁLGEBRA 2</span>
+
+          <h1>VECTORIA <span>UAP</span></h1>
+
+          <h2>
+            Aplicación de Espacios Vectoriales R⁵ al Cálculo
+            de Ingredientes y Costos
+          </h2>
+
+          <p class="hero-subtitle">
+            Casos de estudio: <strong>Batido Amazónico Energizante</strong> y <strong>Majadito</strong>.
+            Una interfaz interactiva para aprender, calcular y defender
+            el proyecto matemático.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="primary-btn" data-go="resolver">
+              Iniciar aplicación <b>→</b>
+            </button>
+            <button class="ghost-btn" data-go="teoria">
+              Explorar teoría
+            </button>
+          </div>
+
+          <div class="hero-mini-info">
+            <span>R⁵</span>
+            <span>W₁</span>
+            <span>dim(W₁)=1</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+
+          <div class="floating-card card-r5">R⁵</div>
+          <div class="floating-card card-w1">W₁</div>
+          <div class="floating-card card-vector">N · V<sub>base</sub></div>
+
+          <div class="smoothie">🥤</div>
+          <div class="leaf leaf-one">🍃</div>
+          <div class="leaf leaf-two">🌿</div>
+        </div>
+      </div>
+
+      <!-- CUATRO LOGOS -->
+      <div class="institution-box reveal">
+        <div class="four-logos">
+          <div class="logo-item">
+            <img src="assets/uap.jpeg" alt="Logo Universidad Amazónica de Pando">
+            <span>UAP</span>
+          </div>
+          <div class="logo-item">
+            <img src="assets/facultad.jpeg" alt="Logo Área de Ciencias y Tecnología">
+            <span>Área</span>
+          </div>
+          <div class="logo-item">
+            <img src="assets/sistemas.jpeg" alt="Logo Ingeniería de Sistemas">
+            <span>Carrera</span>
+          </div>
+          <div class="logo-item">
+            <img src="assets/vectoria.jpeg" alt="Logo del proyecto">
+            <span>Equipo</span>
+          </div>
+        </div>
+
+        <div class="institution-text">
+          <span class="eyebrow">IDENTIDAD ACADÉMICA</span>
+          <h3>Universidad Amazónica de Pando</h3>
+          <p>
+            Área de Ciencias y Tecnología · Ingeniería de Sistemas ·
+            Segundo Semestre · Álgebra 2 · Gestión 2026
+          </p>
+        </div>
+      </div>
+
+      <div class="stat-grid reveal">
+        <article class="stat-card">
+          <span>R⁵</span>
+          <small>Espacio vectorial</small>
+        </article>
+        <article class="stat-card">
+          <span>W₁</span>
+          <small>Subespacio Escalar Estándar</small>
+        </article>
+        <article class="stat-card">
+          <span>1</span>
+          <small>Dimensión de W₁</small>
+        </article>
+        <article class="stat-card">
+          <span>N</span>
+          <small>Escalar de proporción</small>
+        </article>
+      </div>
+
+      <div class="welcome-card reveal">
+        <div class="welcome-icon">λ</div>
+        <div>
+          <span class="eyebrow">MODELO MATEMÁTICO</span>
+          <h3>Una receta expresada como vector</h3>
+          <p>
+            Cada ingrediente ocupa una coordenada de R⁵. Al multiplicar
+            el vector base por N, todas las cantidades crecen manteniendo
+            exactamente las mismas proporciones.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================= RESOLVER ================= -->
+    <section id="resolver" class="section">
+
+      <div class="section-title reveal">
+        <span class="eyebrow">MÓDULO DE CÁLCULO</span>
+        <h2 id="resolverTitle">Resolver el caso gastronómico</h2>
+        <p>
+          Selecciona un caso de estudio, ingresa la cantidad de vasos/platos o parte de un ingrediente para reconstruir toda la receta.
+        </p>
+      </div>
+
+      <div class="case-selector panel reveal">
+        <div>
+          <span class="eyebrow">CASOS GASTRONÓMICOS</span>
+          <h3>Selecciona el producto que quieres calcular</h3>
+          <p>La aplicación mantiene el mismo modelo de combinación lineal y adapta el espacio vectorial, ingredientes, unidades y precios a cada caso.</p>
+        </div>
+        <div class="case-buttons">
+          <button class="case-btn active" data-case="batido">🥤 <span>Batido Amazónico Energizante</span><small>R⁵ · W₁ · 5 ingredientes · por vaso</small></button>
+          <button class="case-btn" data-case="majadito">🍛 <span>Majadito</span><small>R⁴ · W · 4 ingredientes · por plato</small></button>
+        </div>
+      </div>
+
+      <div id="recipeInfo" class="recipe-info panel reveal"></div>
+
+      <div class="solver-grid">
+
+        <div class="panel input-panel reveal">
+          <div class="panel-heading">
+            <div class="heading-number">01</div>
+            <div>
+              <h3>Ingresar datos</h3>
+              <p>Modelo W₁ · Escalar estándar</p>
+            </div>
+          </div>
+
+          <div class="mode-tabs">
+            <button class="mode-btn active" data-mode="vasos" id="quantityModeBtn">
+              Por cantidad de vasos
+            </button>
+            <button class="mode-btn" data-mode="ingrediente">
+              Por ingrediente
+            </button>
+          </div>
+
+          <div id="vasosMode" class="mode-content">
+            <label for="nInput" id="quantityLabel">Cantidad de vasos</label>
+            <input id="nInput" type="number" min="0.01" step="0.01" value="120">
+            <small id="quantityHelp">N representa el número de vasos. Cada vaso multiplica toda la receta base.</small>
+          </div>
+
+          <div id="ingredienteMode" class="mode-content hidden">
+            <label for="ingredientSelect">Seleccionar ingrediente</label>
+
+            <select id="ingredientSelect"></select>
+
+            <label for="ingredientInput">Cantidad conocida</label>
+            <div class="input-with-unit"><input id="ingredientInput" type="number" min="0" step="0.01" value="3000"><span id="ingredientUnitHint">g</span></div>
+
+            <small>
+              Este modo sirve cuando conoces la cantidad disponible de un ingrediente: N = xⱼ / V<sub>base,j</sub>.
+            </small>
+          </div>
+
+          <button id="calculateBtn" class="primary-btn full-btn">
+            Calcular resultado <b>→</b>
+          </button>
+
+          <div class="base-box" id="baseBox"></div>
+        </div>
+
+        <div class="panel result-panel reveal">
+
+          <div class="result-heading">
+            <div>
+              <span class="eyebrow">RESULTADO CALCULADO</span>
+              <h3 id="resultTitle">Para 120 vasos</h3>
+            </div>
+
+            <div class="success-check">✓</div>
+          </div>
+
+          <div id="ingredientTable" class="ingredient-table"></div>
+
+          <div class="cost-grid">
+            <div class="cost-box">
+              <small id="totalCostLabel">COSTO TOTAL DE LOS INGREDIENTES UTILIZADOS</small>
+              <strong id="totalCost">Bs 0,00</strong>
+            </div>
+
+            <div class="cost-box main-cost">
+              <small id="unitCostLabel">COSTO REAL POR VASO</small>
+              <strong id="unitCost">Bs 0,00</strong>
+            </div>
+          </div>
+
+          <button id="procedureBtn" class="outline-btn full-btn">
+            👁 Ver procedimiento paso a paso
+          </button>
+
+        </div>
+      </div>
+
+      <div id="procedure" class="panel procedure hidden">
+        <div class="panel-heading">
+          <div class="heading-number">02</div>
+          <div>
+            <h3>Procedimiento matemático</h3>
+            <p>Desarrollo automático del ejercicio</p>
+          </div>
+        </div>
+
+        <div id="procedureContent"></div>
+      </div>
+
+      <div class="panel formulas reveal">
+        <div class="panel-heading">
+          <div class="heading-number">Σ</div>
+          <div>
+            <h3>Fórmulas utilizadas</h3>
+            <p>Modelo matemático aplicado por el sistema</p>
+          </div>
+        </div>
+
+        <div class="formula-grid">
+          <div>
+            <span>Vector total</span>
+            <b>V<sub>T</sub> = N · V<sub>base</sub></b>
+          </div>
+          <div>
+            <span>Conversión</span>
+            <b>g ÷ 1000 = kg</b>
+            <b>ml ÷ 1000 = L</b>
+          </div>
+          <div>
+            <span>Costo total</span>
+            <b>C = V<sub>comercial</sub><sup>T</sup> · P</b>
+          </div>
+          <div>
+            <span>Costo unitario</span>
+            <b>C<sub>u</sub> = C ÷ N</b>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================= TEORIA ================= -->
+    <section id="teoria" class="section">
+
+      <div class="section-title reveal">
+        <span class="eyebrow">MÓDULO ACADÉMICO</span>
+        <h2>Teoría visual</h2>
+        <p>
+          Conceptos necesarios para explicar el proyecto durante la defensa.
+        </p>
+      </div>
+
+      <div class="theory-gallery panel reveal">
+        <div class="theory-gallery-head">
+          <div>
+            <span class="eyebrow">RECURSOS VISUALES</span>
+            <h3>Álgebra lineal en imágenes</h3>
+            <p>Imágenes educativas integradas en la página. Si una fuente externa no carga, aparece automáticamente una ilustración local para que el proyecto siga funcionando en GitHub Pages.</p>
+          </div>
+          <a class="google-images-btn" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=algebra+lineal+vectores+matrices+espacios+vectoriales">🔎 Ver más en Google Imágenes</a>
+        </div>
+        <div class="theory-gallery-grid">
+          <a class="theory-image-card" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=vectores+y+matrices+algebra+lineal">
+            <div class="image-frame"><img src="https://website-assets.studocu.com/img/document_thumbnails/c84dc19ee936bcccdbd06a7f3828a569/thumb_1200_849.png" data-fallback="assets/diagram-vector.svg" alt="Vectores y matrices"></div>
+            <strong>Vectores y matrices</strong><span>Fuente visual · abrir más imágenes →</span>
+          </a>
+          <a class="theory-image-card" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=espacio+vectorial+subespacio+algebra+lineal">
+            <div class="image-frame"><img src="https://img1.daumcdn.net/thumb/R1280x0.fwebp/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2F8fdM%2Fimage%2FhFPb5AnvihxgCHZq_KgsifLU4Ck" data-fallback="assets/diagram-subspace.svg" alt="Espacios y subespacios vectoriales"></div>
+            <strong>Espacios y subespacios</strong><span>Concepto visual · abrir Google →</span>
+          </a>
+          <a class="theory-image-card" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=producto+escalar+vectores+algebra+lineal">
+            <div class="image-frame"><img src="https://es-static.z-dn.net/files/d8f/0038a60cd17cdf0e1fcb545234fe2e51.jpg" data-fallback="assets/diagram-costos.svg" alt="Producto escalar"></div>
+            <strong>Producto escalar</strong><span>Fórmula geométrica y algebraica →</span>
+          </a>
+          <a class="theory-image-card" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=batido+copoazu+amazonia+bolivia">
+            <div class="image-frame"><img src="https://marvinbaptista.com/storage/recipes/batido-de-copoazu-opt.jpg" data-fallback="assets/food-batido.svg" alt="Batido de copoazú"></div>
+            <strong>Batido amazónico</strong><span>Copoazú · caso R⁵ →</span>
+          </a>
+          <a class="theory-image-card" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=majadito+charque+bolivia">
+            <div class="image-frame"><img src="assets/food-majadito.svg" data-fallback="assets/food-majadito.svg" alt="Majadito con charque"></div>
+            <strong>Majadito de charque</strong><span>Arroz · charque · huevo · plátano →</span>
+          </a>
+          <a class="theory-image-card theory-image-card--formula" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=base+dimension+subespacio+vectorial">
+            <div class="formula-image"><b>B<sub>W₁</sub></b><span>Base → Independencia → Dimensión 1</span><em>W₁ = {N · V<sub>base</sub>}</em></div>
+            <strong>Base y dimensión</strong><span>Ver más esquemas en Google Imágenes →</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="theory-layout">
+
+        <div class="panel theory-menu reveal">
+          <button class="theory-link active" data-topic="r5">
+            📐 R⁵ y vectores
+          </button>
+          <button class="theory-link" data-topic="axiomas">
+            🔢 10 axiomas
+          </button>
+          <button class="theory-link" data-topic="w1">
+            🧩 Subespacio W₁
+          </button>
+          <button class="theory-link" data-topic="base">
+            📊 Base e independencia
+          </button>
+          <button class="theory-link" data-topic="dimension">
+            📏 Dimensión
+          </button>
+          <button class="theory-link" data-topic="costos">
+            💰 Producto escalar y costos
+          </button>
+          <button class="theory-link" data-topic="majadito">
+            🍛 Caso Majadito · R⁴
+          </button>
+        </div>
+
+        <div id="theoryContent" class="panel theory-content reveal"></div>
+
+      </div>
+
+    </section>
+
+    <!-- ================= EJERCICIOS ================= -->
+    <section id="ejercicios" class="section">
+
+      <div class="section-title reveal">
+        <span class="eyebrow">PRÁCTICA INTERACTIVA</span>
+        <h2>Ejercicios</h2>
+        <p>
+          Resuelve los casos y revisa el procedimiento automáticamente.
+        </p>
+      </div>
+
+      <div class="exercise-grid">
+
+        <article class="exercise-card reveal">
+          <div class="exercise-number">01</div>
+          <h3>Receta para 10 vasos</h3>
+          <p>
+            Calcula el vector total aplicando
+            V<sub>T</sub> = N · V<sub>base</sub>.
+          </p>
+          <button class="outline-btn exercise-btn" data-n="10">
+            Resolver
+          </button>
+          <div class="exercise-answer hidden"></div>
+        </article>
+
+        <article class="exercise-card reveal">
+          <div class="exercise-number">02</div>
+          <h3>Receta para 50 vasos</h3>
+          <p>
+            Determina las cantidades de los cinco ingredientes.
+          </p>
+          <button class="outline-btn exercise-btn" data-n="50">
+            Resolver
+          </button>
+          <div class="exercise-answer hidden"></div>
+        </article>
+
+        <article class="exercise-card reveal">
+          <div class="exercise-number">03</div>
+          <h3>Despeje del escalar</h3>
+          <p>
+            Si se tienen 3.000 g de asaí, determina N.
+          </p>
+          <button class="outline-btn exercise-btn" data-n="20">
+            Resolver
+          </button>
+          <div class="exercise-answer hidden"></div>
+        </article>
+
+        <article class="exercise-card reveal majadito-exercise">
+          <div class="exercise-number">04</div>
+          <h3>Majadito para 50 platos</h3>
+          <p>Calcula el vector total y el presupuesto usando arroz, charque, plátano y huevo.</p>
+          <button class="outline-btn exercise-btn" data-n="50" data-case="majadito">Resolver</button>
+          <div class="exercise-answer hidden"></div>
+        </article>
+
+        <article class="exercise-card reveal majadito-exercise">
+          <div class="exercise-number">05</div>
+          <h3>Majadito desde 50 huevos</h3>
+          <p>Si se conocen 50 huevos, despeja N y reconstruye toda la receta proporcional.</p>
+          <button class="outline-btn exercise-btn" data-n="50" data-case="majadito">Resolver</button>
+          <div class="exercise-answer hidden"></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= EQUIPO ================= -->
+    <section id="equipo" class="section">
+
+      <div class="section-title reveal">
+        <span class="eyebrow">INTEGRANTES DEL PROYECTO</span>
+        <h2>Quiénes somos</h2>
+        <p>
+          Equipo de estudiantes de Ingeniería de Sistemas responsable
+          del proyecto integrador.
+        </p>
+      </div>
+
+      <div class="team-grid">
+
+        <article class="member-card reveal">
+          <div class="member-photo">
+            <img src="assets/boris.jpeg" alt="Foto de Boris Alejandro Fernandez Quiñonez">
+          </div>
+          <div class="member-info">
+            <span>INTEGRANTE 01 · COORDINADOR</span>
+            <h3>Boris Alejandro Fernandez Quiñonez</h3>
+            <p>Ingeniería de Sistemas · Segundo Semestre</p>
+            <div class="role-badge">Coordinación del equipo</div>
+            <div class="ru">RU: <strong>49357</strong></div>
+          </div>
+        </article>
+
+        <article class="member-card reveal">
+          <div class="member-photo">
+            <img src="assets/german.jpeg" alt="Foto de German Colquechambi Chungara">
+          </div>
+          <div class="member-info">
+            <span>INTEGRANTE 02</span>
+            <h3>German Colquechambi Chungara</h3>
+            <p>Ingeniería de Sistemas · Segundo Semestre</p>
+            <div class="ru">RU: <strong>48458</strong></div>
+          </div>
+        </article>
+
+        <article class="member-card reveal">
+          <div class="member-photo">
+            <img src="assets/leonel.jpeg" alt="Foto de Leonel Sadam Quispe Mollo">
+          </div>
+          <div class="member-info">
+            <span>INTEGRANTE 03</span>
+            <h3>Leonel Sadam Quispe Mollo</h3>
+            <p>Ingeniería de Sistemas · Segundo Semestre</p>
+            <div class="ru">RU: <strong>48423</strong></div>
+          </div>
+        </article>
+
+
+
+
+
+      </div>
+
+      <div class="photo-note panel reveal">
+        <strong>📸 Identificación del equipo</strong>
+        Los nombres de archivo se mantienen tal como fueron proporcionados: <code>boris.jpeg</code>, <code>german.jpeg</code>, <code>leonel.jpeg</code>. Los logos institucionales se mantienen como <code>uap.jpeg</code>, <code>facultad.jpeg</code>, <code>sistemas.jpeg</code> y <code>vectoria.jpeg</code>.
+      </div>
+
+    </section>
+
+    <!-- ================= PROYECTO ================= -->
+    <section id="proyecto" class="section">
+
+      <div class="section-title reveal">
+        <span class="eyebrow">INFORMACIÓN INSTITUCIONAL</span>
+        <h2>Proyecto Integrador</h2>
+      </div>
+
+      <div class="panel project-card reveal">
+
+        <div class="project-logos">
+          <img src="assets/uap.jpeg" alt="UAP">
+          <img src="assets/facultad.jpeg" alt="Área">
+          <img src="assets/sistemas.jpeg" alt="Carrera">
+          <img src="assets/vectoria.jpeg" alt="Equipo">
+        </div>
+
+        <div class="project-data">
+
+          <div>
+            <span>Universidad</span>
+            <strong>Universidad Amazónica de Pando</strong>
+          </div>
+
+          <div>
+            <span>Área</span>
+            <strong>Área de Ciencias y Tecnología</strong>
+          </div>
+
+          <div>
+            <span>Carrera</span>
+            <strong>Ingeniería de Sistemas</strong>
+          </div>
+
+          <div>
+            <span>Semestre</span>
+            <strong>Segundo Semestre</strong>
+          </div>
+
+          <div>
+            <span>Asignatura</span>
+            <strong>Álgebra 2</strong>
+          </div>
+
+          <div>
+            <span>Gestión</span>
+            <strong>2026</strong>
+          </div>
+
+          <div class="wide">
+            <span>Tema</span>
+            <strong>
+              Aplicación de Espacios Vectoriales al Cálculo de Ingredientes y Costos: Batido Amazónico Energizante y Majadito
+            </strong>
+          </div>
+
+          <div>
+            <span>Subespacio</span>
+            <strong>W₁ · Escalar Estándar</strong>
+          </div>
+
+          <div>
+            <span>Dimensión</span>
+            <strong>dim(W₁) = 1</strong>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="panel defense-card reveal">
+        <div class="defense-icon">🎓</div>
+        <div>
+          <span class="eyebrow">PARA LA DEFENSA</span>
+          <h3>Idea central que debe comprender el equipo</h3>
+          <p>
+            El conjunto W₁ está formado por todos los vectores que son
+            múltiplos escalares del vector base. Por eso su dimensión es 1:
+            existe un solo vector generador linealmente independiente.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div>
+        <strong>VECTORIA UAP</strong>
+        <span>Álgebra 2 · Gestión 2026</span>
+      </div>
+      <p>
+        Universidad Amazónica de Pando · Área de Ciencias y Tecnología ·
+        Ingeniería de Sistemas · Batido Amazónico y Majadito
+      </p>
+    </footer>
+
+  </main>
+
+  <div id="toast" class="toast">Cálculo actualizado ✓</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
